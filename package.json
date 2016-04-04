@@ -1,0 +1,29 @@
+{
+  "name": "stock_watch",
+  "version": "1.0.0",
+  "description": "Demonstration of using API to display stock data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Jennifer Bland",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.0.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-nodemon": "^2.0.6",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "wiredep": "^4.0.0"
+  }
+}
