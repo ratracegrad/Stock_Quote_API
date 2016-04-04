@@ -1,0 +1,39 @@
+/* override bootstrap styles */
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top:50px;
+  color:#333;
+  background-color:#efefef;
+  font-family: 'Oswarld', Arial, sans-serif;
+  margin-bottom: 60px;
+  background-image: url('/images/bg-pattern.png')!important;
+  background-repeat: repeat;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #7db9e8;
+  /*color: white;*/
+  line-height: 60px;
+}
+
+.stockBox {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-top: 75px;
+  padding: 20px 10px;
+  background-color: #fff;
+}
+
+.table {
+  margin-top: 20px;
+}
