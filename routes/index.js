@@ -5,7 +5,17 @@ var stockModel = require('../models/stock');
 
 module.exports = function(app) {
     app.get('/', function(req, res) {
-        res.render('index', {stockDetails: {}} );
+        res.render('index');
+    });
+
+    app.get('/history', function(req, res) {
+        stockModel.find(function(err, result) {
+            if (err) {
+                throw err;
+            }
+
+            res.render('history', {stocks: result} )
+        });
     });
 
     app.post('/api/stock', function(req, res) {

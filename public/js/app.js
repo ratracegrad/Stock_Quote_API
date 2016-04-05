@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     $('.getStock').submit(function(event) {
         event.preventDefault();
 
@@ -18,6 +19,7 @@ $(document).ready(function() {
                            $('#stockHigh').text(stock.High);
                            $('#stockLow').text(stock.Low);
                            $('#stockVolume').text(stock.Volume);
+
                        } else {
                            $('#stockName').text('');
                            $('#symbol').text('');
