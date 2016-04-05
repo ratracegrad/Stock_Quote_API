@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <% include ./partials/head %>
+
+    <body>
+
+        <% include ./partials/nav %>
+
+        <div class="container">
+            <div class="tableContainer">
+                <table class="table table-striped">
+                    <thead>
+                    <tr class="tableHistoryTitle">
+                        <td>Name</td>
+                        <td>Symbol</td>
+                        <td>Last Price</td>
+                        <td>High</td>
+                        <td>Low</td>
+                        <td>Volume</td>
+                        <td>Lookup Date</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <% for (var i = 0; i < stocks.length; i++) {%>
+                            <tr>
+                                <td><%= stocks[i].Name %></td>
+                                <td><%= stocks[i].Symbol %></td>
+                                <td><%= stocks[i].LastPrice %></td>
+                                <td><%= stocks[i].High %></td>
+                                <td><%= stocks[i].Low %></td>
+                                <td><%= stocks[i].Volume %></td>
+                                <td><%= new Date(stocks[i].DateCreated).toISOString().slice(0,10) %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+        <% include ./partials/footer %>
+
+    </body>
+</html>
