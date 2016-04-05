@@ -12,7 +12,11 @@ var stockSchema = new mongoose.Schema({
     ChangePercentYTD:   Number,
     High:               Number,
     Low:                Number,
-    Open:               Number
+    Open:               Number,
+    DateCreated:       {
+        type:       Date,
+        default:    Date.now
+    }
 });
 
 var Stock = mongoose.model('Stock', stockSchema);
