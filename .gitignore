@@ -34,3 +34,6 @@ node_modules
 
 # IntelliJ Files
 .idea
+
+# Environment Variables
+.env
